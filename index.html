@@ -51,6 +51,10 @@
             border-bottom: 2px solid var(--border-color);
         }
 
+        .version-card + .version-card {
+            margin-top: 30px;
+        }
+
         .info-row {
             margin-bottom: 25px;
         }
@@ -112,22 +116,67 @@
             color: #666;
             font-style: italic;
         }
+
+        /* --- Latest Version Tag --- */
+        .latest-badge {
+            color: var(--primary-color);
+            font-size: 14px;
+            font-weight: 500;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- ★ 最新版: 把下面这行 <span class="latest-badge">Latest</span> 移动到新版本的版本号后面即可 -->
         <div class="version-card">
             <h1 class="version-title">Car Connection Box Aftersales Manual</h1>
-            
+
+            <div class="info-row">
+                <div class="info-label">Manual Version:</div>
+                <div class="info-value">1.2.0<span class="latest-badge">(Latest)</span></div>
+            </div>
+
+            <div class="info-row">
+                <div class="info-label">Update Content:</div>
+                <div class="info-value update-content" style="text-align: left; padding-left: 16px;">1. Added User Guide module
+2. Added Chapter Overview to some chapters
+3. Moved content from Product Information to Appendix; moved some content from Upgrade Instruction
+4. Added Tip and Problem Feedback to the Troubleshooting module
+5. Changed some tutorial links to embedded video format (no extra navigation needed)
+6. Added hardware upgrade and software upgrade tutorials to the Software Updates module</div>
+                <a href="./V1.2.0(6.18)/index.html" target="_blank" class="manual-link-btn">After-Sales Manual Link</a>
+            </div>
+        </div>
+
+        <div class="version-card">
+            <h1 class="version-title">Car Connection Box Aftersales Manual</h1>
+
+            <div class="info-row">
+                <div class="info-label">Manual Version:</div>
+                <div class="info-value">1.1.0</div>
+            </div>
+
+            <div class="info-row">
+                <div class="info-label">Update Content:</div>
+                <div class="info-value update-content" style="text-align: left; padding-left: 16px;">Updated the Feedback module</div>
+                <a href="./V1.1.0(5.6)/index.html" target="_blank" class="manual-link-btn">After-Sales Manual Link</a>
+            </div>
+        </div>
+
+        <div class="version-card">
+            <h1 class="version-title">Car Connection Box Aftersales Manual</h1>
+
             <div class="info-row">
                 <div class="info-label">Manual Version:</div>
                 <div class="info-value">1.0.1</div>
             </div>
-            
+
             <div class="info-row">
                 <div class="info-label">Update Content:</div>
                 <div class="info-value update-content" style="text-align: left; padding-left: 16px;">First Release</div>
-                <a href="https://hisame1.github.io/After-Sales-Manual-LX/" target="_blank" class="manual-link-btn">After-Sales Manual Link</a>
+                <a href="./V1.0.1(4.24)/index.html" target="_blank" class="manual-link-btn">After-Sales Manual Link</a>
             </div>
         </div>
     </div>
